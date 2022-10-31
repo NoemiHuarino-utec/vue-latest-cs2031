@@ -5,6 +5,7 @@ export const useUserStore = defineStore({
   state: () => ({
     name: "",
     email: "",
+    favoritos: [],
   }),
 
   actions: {
@@ -24,6 +25,17 @@ export const useUserStore = defineStore({
     isAuthenticated() {
       return this.name !== "";
     },
+    addFavorito(num) {
+      this.favoritos.push(num);
+      localStorage.setItem("favoritos", JSON.stringify(this.favoritos));
+    },
+    removeFavorito(num) {
+      this.favoritos = this.favoritos.filter((favorito) => favorito !== num);
+      localStorage.setItem("favoritos", JSON.stringify(this.favoritos));
+    },
+    getFavorites() {
+      return JSON.parse(localStorage.getItem("favoritos")) || [];
+    }
   },
 });
 

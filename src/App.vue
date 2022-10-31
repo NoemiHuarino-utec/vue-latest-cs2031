@@ -39,6 +39,8 @@ router.beforeEach((to, from, next) => {
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/login">Login</RouterLink>
+        <RouterLink to="/pokedex">Pokedex</RouterLink>
+        <RouterLink to="/favorites">Favorite Pokemon</RouterLink>
       </nav>
     </div>
   </header>
