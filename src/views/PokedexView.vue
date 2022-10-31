@@ -45,7 +45,7 @@ export default {
 
 <style scoped>
 @media (min-width: 1024px) {
-  .pokedex {
+  .pokedex { /*pokedex es el nombre de la clase de arriba, siempre es así*/
     margin-top: 30%;
     margin-bottom: 30%;
     width: 800px;

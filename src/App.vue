@@ -71,7 +71,7 @@ nav a.router-link-exact-active {
 }
 
 nav a.router-link-exact-active:hover {
-  background-color: transparent;
+  background-color: rgb(134, 202, 134);
 }
 
 nav a {
